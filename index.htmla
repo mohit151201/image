@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click Count</title>
+		<script>
+		var a,b,c,d;
+		function show()
+		{
+			a=document.getElementBYId('A').value;
+			b=document.getElementBYId('B').value;
+			c=document.getElementBYId('C').value;
+			d=document.getElementBYId('D').value;
+
+			if(d.length!=10){window.alert("Number galat hai ")}
+				if(a&&b&&c)
+				{
+					window.alert("Thankyou");
+				}
+				else
+					window.alert("Something went wrong");
+	    }
+
+		
+	</script>
+	<style>
+		body
+		{
+			background-color:black;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<form onsubmit="show()">
+		<p> Enter First Name</p>
+		<input type="text "id="A">
+		<p> Enter Second Name</p>
+		<input type="text"id="B">
+		<p> Enter ID </p>
+		<input type="Email" id="mail">
+		<p> Enter Mobile Number</p>
+		<input type="Number" id="D">
+		<p> Message</p>
+		<input type="text"><br><br>
+		<input type="Submit">
+		<input type="Reset">
+
+	</form>
+</body>
+</html>
+
+
+
